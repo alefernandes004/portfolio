@@ -1,5 +1,26 @@
 h1{
-    font-size: 90;
+    font-size: 62px;
     color: #240B36;
-    text-align: center;
+    text-align:left;
+    font-family: 'Montserrat';
+    margin-bottom: 3px;
+}
+
+h2{
+    font-size: 40px;
+    font-family: 'Montserrat';
+    color: #000000;
+    text-align: left;
+    margin-top: 8px;
+    
+}
+
+a{
+    background-color: #B06060;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+    text-decoration: none;
+
 }
