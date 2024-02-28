@@ -1,26 +1,84 @@
-h1{
-    font-size: 62px;
-    color: #240B36;
-    text-align:left;
-    font-family: 'Montserrat';
-    margin-bottom: 3px;
-}
-
-h2{
-    font-size: 40px;
-    font-family: 'Montserrat';
-    color: #000000;
-    text-align: left;
-    margin-top: 8px;
-    
-}
-
-a{
-    background-color: #B06060;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: #000000;
-    margin-bottom: 10px;
+ /* css reset  */
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
-
-}
+   }
+  
+   body{
+    position: relative;
+   }
+  
+   :root{
+    --font-title: 'Montserrat';
+    --font-body:'Poppins';
+    --destak-color: #240B36;
+    --white: #f3f3f3;
+    --black: #141414;
+   }
+   
+   header::before{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-image: url("../assets/images/background-hero.jpg");
+    background-size: cover;
+    animation: zoom 10s ease forwards;
+    /*opacity: .2;*/
+    /*display:block */
+   }
+  
+   header{
+    overflow: hidden;
+   
+   }
+  
+  
+   h1{
+      color: var(--destak-color);
+      text-shadow: 1px 5px 6px rgba(255, 255, 255, 4);
+      font-family: (--font-title);
+      font-size: 4.5rem;
+      margin: 0 5.4rem;
+   }
+  
+   span#subtitulo{
+    color: var(--white) ;
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 2.5rem;
+    display: block;
+    margin-top: 2rem;
+    margin: 2rem 5.4rem;
+   }
+  
+   a{
+    color: var(--white);
+    margin: 0 5.4rem;
+    font-family: var(--font-body);
+    background-color: var(--destak-color);
+    padding: .25rem 1rem;
+    border-radius: 0.5rem;
+    transition: opacity 1s;
+   }
+  
+   a:hover{
+    opacity: .8;
+    
+   }
+  
+   @keyframes zoom{
+    /* ou 0% */ 
+    from{
+      transform: scale(1);
+    }
+    /*100% */
+    to{
+      transform: scale(1.5);
+    }
+   }
+  
